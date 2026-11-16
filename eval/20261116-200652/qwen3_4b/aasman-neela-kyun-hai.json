@@ -1,0 +1,86 @@
+{
+  "title": "Aasman neela kyun hai?",
+  "language": "hinglish",
+  "format": "educational",
+  "beats": [
+    {
+      "id": 1,
+      "scene": "hook",
+      "narration": "Sunlight white dikhti hai, lekin kyun aasman neel hai?",
+      "tts": "Sunlight white dikhti hai, lekin kyun aasman neel hai?",
+      "heading": "Aasman neel hai? Kya ghaat?",
+      "emoji": "🤔",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 2,
+      "scene": "statement",
+      "narration": "Sunlight is actually all colours mixed together.",
+      "tts": "Sunlight is actually all colours mixed together.",
+      "heading": "Sunlight: All Colours",
+      "emoji": "☀️",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 3,
+      "scene": "statement",
+      "narration": "When sunlight hits air molecules, it scatters everywhere. This is Rayleigh scattering.",
+      "tts": "When sunlight hits air molecules, it scatters everywhere. This is Rayleigh scattering.",
+      "heading": "Rayleigh Scattering",
+      "emoji": "🌌",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 4,
+      "scene": "bullets",
+      "narration": "Blue light scatters 10 times more than red light because it's shorter wavelength.",
+      "tts": "Blue light scatters 10 times more than red light because it's shorter wavelength.",
+      "heading": "Why Blue Scatters More",
+      "emoji": "💡",
+      "items": [
+        "Shorter wavelength",
+        "Scatters 10x more"
+      ],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 5,
+      "scene": "stat",
+      "narration": "Scattered blue light comes from all directions, so sky looks blue.",
+      "tts": "Scattered blue light comes from all directions, so sky looks blue.",
+      "heading": "Why Sky Looks Blue",
+      "emoji": "🔵",
+      "items": [],
+      "value": "All directions",
+      "answer_index": -1
+    },
+    {
+      "id": 6,
+      "scene": "statement",
+      "narration": "At sunset, light travels far through air, so blue scatters away and red/orange remains.",
+      "tts": "At sunset, light travels far through air, so blue scatters away and red/orange remains.",
+      "heading": "Sunset Magic",
+      "emoji": "🌅",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    }
+  ],
+  "caption": "Aasman neel hai? Kya ghaat? 😱 Science in 30 seconds. Follow for more!",
+  "hashtags": [
+    "sciencefacts",
+    "aasman",
+    "rayleighscattering",
+    "india",
+    "scienceforstudents"
+  ],
+  "model": "qwen3:4b",
+  "generated_at": "2026-11-16T20:07:41+05:30"
+}

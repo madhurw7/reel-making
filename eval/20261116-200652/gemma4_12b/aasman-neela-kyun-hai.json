@@ -1,0 +1,101 @@
+{
+  "title": "Why is the sky blue?",
+  "language": "hinglish",
+  "format": "educational",
+  "beats": [
+    {
+      "id": 1,
+      "scene": "hook",
+      "narration": "Sunlight white dikhti hai, toh phir aasmaan neela kyun hai?",
+      "tts": "सनलाइट व्हाइट दिखती है, तो फिर आसमान नीला क्यों है?",
+      "heading": "Sunlight vs Sky",
+      "emoji": "🤔",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 2,
+      "scene": "statement",
+      "narration": "Actually, white light saare colours ka ek mix hota hai.",
+      "tts": "एक्चुअली, व्हाइट लाइट सारे कलर्स का एक मिक्स होता है।",
+      "heading": "White Light Mix",
+      "emoji": "🌈",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 3,
+      "scene": "bullets",
+      "narration": "Jab ye light air molecules se takraati hai, toh wo har taraf phail jati hai. Isse Rayleigh scattering kehte hain.",
+      "tts": "जब ये लाइट एयर मॉलिक्यूल्स से टकराती है, तो वो हर तरफ फैल जाती है। इसे रेले स्कैटरिंग कहते हैं।",
+      "heading": "Rayleigh Scattering",
+      "emoji": "💥",
+      "items": [
+        "Light hits molecules",
+        "Scatters in all directions"
+      ],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 4,
+      "scene": "stat",
+      "narration": "Blue light ki wavelength choti hoti hai, isliye ye red light se 10 guna zyada scatter hoti hai.",
+      "tts": "ब्लू लाइट की वेवलेंथ छोटी होती है, इसलिए ये रेड लाइट से दस गुना ज़्यादा स्कैटर होती है।",
+      "heading": "10x More Scattering",
+      "emoji": "📊",
+      "items": [],
+      "value": "10 times",
+      "answer_index": -1
+    },
+    {
+      "id": 5,
+      "scene": "statement",
+      "narration": "Ye scattered blue light har taraf se hamari aankhon tak pahunchti hai, isliye pura sky blue dikhta hai.",
+      "tts": "ये स्कैटरड ब्लू लाइट हर तरफ से हमारी आँखों तक पहुँचती है, इसलिए पूरा स्काई ब्लू दिखता है।",
+      "heading": "Why it looks Blue",
+      "emoji": "💙",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 6,
+      "scene": "compare",
+      "narration": "Sunset ke waqt light zyada air se guzarti hai. Blue light khatam ho jati hai aur sirf red aur orange bachte hain.",
+      "tts": "सनसेट के वक्त लाइट ज़्यादा एयर से गुज़रती है। ब्लू लाइट खत्म हो जाती है और सिर्फ रेड और ऑरेंज बचते हैं।",
+      "heading": "Day vs Sunset",
+      "emoji": "🌇",
+      "items": [
+        "Day: Blue",
+        "Sunset: Red/Orange"
+      ],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 7,
+      "scene": "outro",
+      "narration": "Aise hi cool science facts ke liye follow karein.",
+      "tts": "ऐसे ही कूल साइंस फैक्ट्स के लिए फॉलो करें।",
+      "heading": "Follow for more",
+      "emoji": "🚀",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    }
+  ],
+  "caption": "Kya aapne kabhi socha hai ki sky neela kyun dikhta hai? Science ke peeche ki wajah jaaniye! 🌌",
+  "hashtags": [
+    "sciencefacts",
+    "space",
+    "physics",
+    "hindi",
+    "educational",
+    "coolfacts"
+  ],
+  "model": "gemma4:12b",
+  "generated_at": "2026-11-16T20:28:04+05:30"
+}

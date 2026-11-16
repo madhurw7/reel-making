@@ -1,0 +1,14 @@
+{
+  "_note": "All tracks are CC0 (public domain) from OpenGameArt. 'formats' decides which reel formats a track is picked for with music = \"auto\"; the tags were assigned from titles and collections, not by ear, so retag after listening. Add your own files here with the same fields.",
+  "tracks": [
+    {"file": "a-cup-of-tea.mp3", "title": "A cup of tea", "artist": "Snabisch", "license": "CC0", "source": "https://opengameart.org/content/lofi-compilation", "mood": "calm", "formats": ["educational"], "offset_s": 0},
+    {"file": "chill-lofi.mp3", "title": "Chill lofi inspired", "artist": "omfgdude", "license": "CC0", "source": "https://opengameart.org/content/chill-lofi-inspired", "mood": "calm", "formats": ["educational"], "offset_s": 0},
+    {"file": "city-in-the-rearview.mp3", "title": "City In The Rearview", "artist": "HoliznaCC0", "license": "CC0", "source": "https://opengameart.org/content/chill-beats-collection", "mood": "calm", "formats": ["educational", "story"], "offset_s": 0},
+    {"file": "rainy-forest.mp3", "title": "Rainy Forest", "artist": "Snabisch", "license": "CC0", "source": "https://opengameart.org/content/lofi-compilation", "mood": "atmospheric", "formats": ["story"], "offset_s": 0},
+    {"file": "oceanside.mp3", "title": "Oceanside", "artist": "Snabisch", "license": "CC0", "source": "https://opengameart.org/content/lofi-compilation", "mood": "atmospheric", "formats": ["story"], "offset_s": 0},
+    {"file": "autumn.mp3", "title": "Autumn", "artist": "HoliznaCC0", "license": "CC0", "source": "https://opengameart.org/content/chill-beats-collection", "mood": "warm", "formats": ["story"], "offset_s": 0},
+    {"file": "blue-skies.mp3", "title": "Blue Skies", "artist": "HoliznaCC0", "license": "CC0", "source": "https://opengameart.org/content/happy-lo-fi-lofi-collection", "mood": "upbeat", "formats": ["trivia", "educational"], "offset_s": 0},
+    {"file": "new-shoes.mp3", "title": "New Shoes", "artist": "HoliznaCC0", "license": "CC0", "source": "https://opengameart.org/content/happy-lo-fi-lofi-collection", "mood": "upbeat", "formats": ["trivia"], "offset_s": 0},
+    {"file": "puppy-love.mp3", "title": "Puppy Love", "artist": "HoliznaCC0", "license": "CC0", "source": "https://opengameart.org/content/happy-lo-fi-lofi-collection", "mood": "upbeat", "formats": ["trivia"], "offset_s": 0}
+  ]
+}

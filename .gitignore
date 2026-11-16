@@ -1,0 +1,12 @@
+.venv/
+node_modules/
+__pycache__/
+*.egg-info/
+.DS_Store
+reels/*/video/renders/
+reels/*/video/.hyperframes/
+
+# Individual reels (inputs, audio, renders) and captured ideas/sources
+reels/
+ideas/
+sources/

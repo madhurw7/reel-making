@@ -1,0 +1,429 @@
+{
+  "$defs": {
+    "Audience": {
+      "properties": {
+        "who": {
+          "description": "Who this reel is for, concretely. e.g. 'college students curious about space'",
+          "title": "Who",
+          "type": "string"
+        },
+        "knowledge_level": {
+          "default": "beginner",
+          "enum": [
+            "beginner",
+            "intermediate",
+            "expert"
+          ],
+          "title": "Knowledge Level",
+          "type": "string"
+        },
+        "why_they_care": {
+          "default": "",
+          "description": "The itch this scratches for them: curiosity, usefulness, emotion",
+          "title": "Why They Care",
+          "type": "string"
+        }
+      },
+      "required": [
+        "who"
+      ],
+      "title": "Audience",
+      "type": "object"
+    },
+    "GlossaryItem": {
+      "properties": {
+        "term": {
+          "title": "Term",
+          "type": "string"
+        },
+        "meaning": {
+          "description": "One plain sentence a non-technical viewer understands",
+          "title": "Meaning",
+          "type": "string"
+        }
+      },
+      "required": [
+        "term",
+        "meaning"
+      ],
+      "title": "GlossaryItem",
+      "type": "object"
+    },
+    "Perspective": {
+      "description": "A point from the discussion around the source (e.g. a Hacker News comment) that adds something.",
+      "properties": {
+        "point": {
+          "description": "The point, paraphrased in plain language",
+          "title": "Point",
+          "type": "string"
+        },
+        "kind": {
+          "default": "new_angle",
+          "enum": [
+            "explains",
+            "new_angle",
+            "counterpoint",
+            "experience",
+            "correction",
+            "context"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "origin": {
+          "default": "",
+          "description": "Where it came from, e.g. 'HN comment 4123456 by someuser'",
+          "title": "Origin",
+          "type": "string"
+        },
+        "verified": {
+          "default": false,
+          "description": "True only if the article itself (or a cited source) supports it; unverified points are opinions and must be presented as such",
+          "title": "Verified",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "point"
+      ],
+      "title": "Perspective",
+      "type": "object"
+    },
+    "Review": {
+      "description": "Editor pass over a machine-drafted idea.",
+      "properties": {
+        "by": {
+          "default": "",
+          "description": "Who reviewed: model name or person",
+          "title": "By",
+          "type": "string"
+        },
+        "at": {
+          "default": "",
+          "title": "At",
+          "type": "string"
+        },
+        "style_guide_version": {
+          "default": "",
+          "title": "Style Guide Version",
+          "type": "string"
+        },
+        "changes": {
+          "description": "What was changed and why, one line each",
+          "items": {
+            "type": "string"
+          },
+          "title": "Changes",
+          "type": "array"
+        },
+        "concerns": {
+          "description": "Open doubts a human should settle before production",
+          "items": {
+            "type": "string"
+          },
+          "title": "Concerns",
+          "type": "array"
+        }
+      },
+      "title": "Review",
+      "type": "object"
+    },
+    "Source": {
+      "properties": {
+        "type": {
+          "default": "manual",
+          "description": "Where the idea came from: manual, hackernews, url, book, video, ...",
+          "title": "Type",
+          "type": "string"
+        },
+        "ref": {
+          "default": "",
+          "description": "Link, title or pointer to the source (for Hacker News: the discussion page)",
+          "title": "Ref",
+          "type": "string"
+        },
+        "url": {
+          "default": "",
+          "description": "The article or page the idea is based on",
+          "title": "Url",
+          "type": "string"
+        },
+        "title": {
+          "default": "",
+          "description": "Title of the source as published",
+          "title": "Title",
+          "type": "string"
+        },
+        "material": {
+          "default": "",
+          "description": "Folder holding the downloaded source: article text, comments, digest",
+          "title": "Material",
+          "type": "string"
+        },
+        "raw": {
+          "default": "",
+          "description": "Original snippet as captured, before it was shaped into an idea",
+          "title": "Raw",
+          "type": "string"
+        },
+        "captured_at": {
+          "default": "",
+          "title": "Captured At",
+          "type": "string"
+        },
+        "meta": {
+          "additionalProperties": true,
+          "description": "Source-specific extras, e.g. HN id, points, comment count",
+          "title": "Meta",
+          "type": "object"
+        }
+      },
+      "title": "Source",
+      "type": "object"
+    },
+    "SourceDigest": {
+      "description": "Everything worth keeping from the source, so the idea can be reworked without re-reading the article.",
+      "properties": {
+        "summary": {
+          "default": "",
+          "description": "What the article says, in 4-8 plain sentences",
+          "title": "Summary",
+          "type": "string"
+        },
+        "facts": {
+          "description": "Every checkable claim the article makes, one per line",
+          "items": {
+            "type": "string"
+          },
+          "title": "Facts",
+          "type": "array"
+        },
+        "numbers": {
+          "description": "Figures with their unit and what they measure",
+          "items": {
+            "type": "string"
+          },
+          "title": "Numbers",
+          "type": "array"
+        },
+        "entities": {
+          "description": "People, companies, products, places: 'Name: who/what'",
+          "items": {
+            "type": "string"
+          },
+          "title": "Entities",
+          "type": "array"
+        },
+        "glossary": {
+          "description": "Jargon the viewer will not know",
+          "items": {
+            "$ref": "#/$defs/GlossaryItem"
+          },
+          "title": "Glossary",
+          "type": "array"
+        },
+        "truncated": {
+          "default": false,
+          "description": "True if the article was longer than what was processed",
+          "title": "Truncated",
+          "type": "boolean"
+        }
+      },
+      "title": "SourceDigest",
+      "type": "object"
+    }
+  },
+  "description": "One reel idea. Every capture source produces this same structure.",
+  "properties": {
+    "id": {
+      "description": "Slug, unique among ideas",
+      "title": "Id",
+      "type": "string"
+    },
+    "title": {
+      "description": "Working title",
+      "title": "Title",
+      "type": "string"
+    },
+    "essence": {
+      "description": "The core of the reel in 1-2 sentences: the single thing a viewer walks away with",
+      "title": "Essence",
+      "type": "string"
+    },
+    "format": {
+      "description": "educational = teaches one concept; story = narrative with a turn; trivia = question(s) the viewer tries to answer",
+      "enum": [
+        "educational",
+        "story",
+        "trivia"
+      ],
+      "title": "Format",
+      "type": "string"
+    },
+    "language": {
+      "default": "hinglish",
+      "enum": [
+        "english",
+        "hinglish"
+      ],
+      "title": "Language",
+      "type": "string"
+    },
+    "audience": {
+      "$ref": "#/$defs/Audience"
+    },
+    "hook": {
+      "default": "",
+      "description": "Opening angle: the question, surprise or stake that stops the scroll",
+      "title": "Hook",
+      "type": "string"
+    },
+    "angle": {
+      "default": "",
+      "description": "The take that makes this reel ours: the quirky, relatable way into the topic",
+      "title": "Angle",
+      "type": "string"
+    },
+    "background": {
+      "default": "",
+      "description": "What the viewer must know first, assuming no prior knowledge",
+      "title": "Background",
+      "type": "string"
+    },
+    "analogies": {
+      "description": "Everyday comparisons that make the idea click (chai stall, cricket, ...)",
+      "items": {
+        "type": "string"
+      },
+      "title": "Analogies",
+      "type": "array"
+    },
+    "so_what": {
+      "default": "",
+      "description": "Why this matters to the viewer's own life, money, job or phone",
+      "title": "So What",
+      "type": "string"
+    },
+    "share_line": {
+      "default": "",
+      "description": "The one line the viewer can repeat to a friend to sound in the loop",
+      "title": "Share Line",
+      "type": "string"
+    },
+    "key_points": {
+      "description": "Facts to teach / plot beats in order / trivia questions with answers. The script may only use facts listed here or in essence",
+      "items": {
+        "type": "string"
+      },
+      "title": "Key Points",
+      "type": "array"
+    },
+    "tone": {
+      "default": "curious",
+      "description": "e.g. curious, playful, dramatic, calm, funny",
+      "title": "Tone",
+      "type": "string"
+    },
+    "target_duration_s": {
+      "default": 35,
+      "maximum": 90,
+      "minimum": 12,
+      "title": "Target Duration S",
+      "type": "integer"
+    },
+    "cta": {
+      "default": "",
+      "description": "Closing call to action; empty = a generic follow line",
+      "title": "Cta",
+      "type": "string"
+    },
+    "visual_notes": {
+      "default": "",
+      "description": "Optional hints for the visuals",
+      "title": "Visual Notes",
+      "type": "string"
+    },
+    "references": {
+      "description": "Links for fact-checking",
+      "items": {
+        "type": "string"
+      },
+      "title": "References",
+      "type": "array"
+    },
+    "perspectives": {
+      "description": "Points from the discussion that teach or add a new view",
+      "items": {
+        "$ref": "#/$defs/Perspective"
+      },
+      "title": "Perspectives",
+      "type": "array"
+    },
+    "digest": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/SourceDigest"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Everything captured from the source article"
+    },
+    "review": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Review"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "tags": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Tags",
+      "type": "array"
+    },
+    "source": {
+      "$ref": "#/$defs/Source"
+    },
+    "status": {
+      "default": "captured",
+      "enum": [
+        "draft",
+        "reviewed",
+        "captured",
+        "approved",
+        "in_production",
+        "published",
+        "rejected"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "notes": {
+      "default": "",
+      "title": "Notes",
+      "type": "string"
+    },
+    "created_at": {
+      "default": "",
+      "title": "Created At",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "essence",
+    "format",
+    "audience"
+  ],
+  "title": "Idea",
+  "type": "object"
+}

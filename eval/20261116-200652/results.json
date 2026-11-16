@@ -1,0 +1,153 @@
+[
+  {
+    "model": "qwen3:4b",
+    "idea": "aasman-neela-kyun-hai",
+    "language": "hinglish",
+    "format": "educational",
+    "total_s": 49.2,
+    "tokens_per_s": 39.2,
+    "llm_calls": 15,
+    "words": 66,
+    "word_budget": 117,
+    "beats": 6,
+    "scene_types": 4,
+    "scenes": "bullets,hook,stat,statement",
+    "warnings": 3,
+    "warning_text": [
+      "The narration has 66 words. It must have about 117. Add detail from the key points.",
+      "The narration of beats [2, 3, 4, 5, 6] is plain English. Rewrite those lines in Hinglish (Hindi sentence structure with words like hai, ka, mein, aur, lekin; English only for key terms).",
+      "Beats [1, 2, 3, 4, 5, 6]: check the Devanagari voice text (`tts`): Latin letters, digits, or words that differ from the narration."
+    ]
+  },
+  {
+    "model": "qwen3:4b",
+    "idea": "eiffel-tower-bechne-wala-aadmi",
+    "language": "hinglish",
+    "format": "story",
+    "total_s": 75.6,
+    "tokens_per_s": 42.8,
+    "llm_calls": 19,
+    "words": 166,
+    "word_budget": 133,
+    "beats": 8,
+    "scene_types": 4,
+    "scenes": "hook,stat,statement,story",
+    "warnings": 3,
+    "warning_text": [
+      "The narration has 166 words. It must have about 133. Cut it down.",
+      "Beats [1] are too long. Split them or shorten to 20 words.",
+      "Beats [1, 2, 3, 4, 5, 6, 7, 8]: check the Devanagari voice text (`tts`): Latin letters, digits, or words that differ from the narration."
+    ]
+  },
+  {
+    "model": "qwen3:4b",
+    "idea": "longest-day-planet",
+    "language": "english",
+    "format": "trivia",
+    "total_s": 23.2,
+    "tokens_per_s": 43.0,
+    "llm_calls": 2,
+    "words": 61,
+    "word_budget": 100,
+    "beats": 5,
+    "scene_types": 4,
+    "scenes": "answer,hook,quiz,story",
+    "warnings": 1,
+    "warning_text": [
+      "The narration has 61 words. It must have about 100. Add detail from the key points."
+    ]
+  },
+  {
+    "model": "qwen3:8b",
+    "idea": "aasman-neela-kyun-hai",
+    "language": "hinglish",
+    "format": "educational",
+    "total_s": 77.8,
+    "tokens_per_s": 25.4,
+    "llm_calls": 5,
+    "words": 73,
+    "word_budget": 117,
+    "beats": 7,
+    "scene_types": 6,
+    "scenes": "compare,hook,outro,stat,statement,story",
+    "warnings": 3,
+    "warning_text": [
+      "The narration has 73 words. It must have about 117. Add detail from the key points.",
+      "The narration of beats [3, 4, 5, 7] is plain English. Rewrite those lines in Hinglish (Hindi sentence structure with words like hai, ka, mein, aur, lekin; English only for key terms).",
+      "Beats [7]: check the Devanagari voice text (`tts`): Latin letters, digits, or words that differ from the narration."
+    ]
+  },
+  {
+    "model": "qwen3:8b",
+    "idea": "eiffel-tower-bechne-wala-aadmi",
+    "error": "timed out"
+  },
+  {
+    "model": "qwen3:8b",
+    "idea": "longest-day-planet",
+    "language": "english",
+    "format": "trivia",
+    "total_s": 50.8,
+    "tokens_per_s": 25.1,
+    "llm_calls": 2,
+    "words": 57,
+    "word_budget": 100,
+    "beats": 7,
+    "scene_types": 6,
+    "scenes": "answer,outro,quiz,stat,statement,story",
+    "warnings": 1,
+    "warning_text": [
+      "The narration has 57 words. It must have about 100. Add detail from the key points."
+    ]
+  },
+  {
+    "model": "gemma4:12b",
+    "idea": "aasman-neela-kyun-hai",
+    "language": "hinglish",
+    "format": "educational",
+    "total_s": 96.3,
+    "tokens_per_s": 13.2,
+    "llm_calls": 2,
+    "words": 107,
+    "word_budget": 117,
+    "beats": 7,
+    "scene_types": 6,
+    "scenes": "bullets,compare,hook,outro,stat,statement",
+    "warnings": 0,
+    "warning_text": []
+  },
+  {
+    "model": "gemma4:12b",
+    "idea": "eiffel-tower-bechne-wala-aadmi",
+    "language": "hinglish",
+    "format": "story",
+    "total_s": 69.4,
+    "tokens_per_s": 19.8,
+    "llm_calls": 2,
+    "words": 122,
+    "word_budget": 133,
+    "beats": 9,
+    "scene_types": 5,
+    "scenes": "bullets,hook,outro,statement,story",
+    "warnings": 0,
+    "warning_text": []
+  },
+  {
+    "model": "gemma4:12b",
+    "idea": "longest-day-planet",
+    "language": "english",
+    "format": "trivia",
+    "total_s": 77.8,
+    "tokens_per_s": 24.2,
+    "llm_calls": 2,
+    "words": 67,
+    "word_budget": 100,
+    "beats": 6,
+    "scene_types": 6,
+    "scenes": "answer,compare,hook,outro,quiz,statement",
+    "warnings": 1,
+    "warning_text": [
+      "The narration has 67 words. It must have about 100. Add detail from the key points."
+    ]
+  }
+]

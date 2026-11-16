@@ -1,0 +1,10 @@
+{
+  "name": "reel-making",
+  "private": true,
+  "description": "Node-side tools for the reel pipeline (HyperFrames renderer, GSAP, fonts). Versions are pinned.",
+  "devDependencies": {
+    "hyperframes": "0.9.56",
+    "gsap": "3.13.0",
+    "@fontsource/poppins": "5.2.6"
+  }
+}

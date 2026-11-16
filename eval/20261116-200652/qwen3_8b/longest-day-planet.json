@@ -1,0 +1,100 @@
+{
+  "title": "Which Planet Has the Longest Day?",
+  "language": "english",
+  "format": "trivia",
+  "beats": [
+    {
+      "id": 1,
+      "scene": "quiz",
+      "narration": "Which planet has the longest day?",
+      "tts": "Which planet has the longest day?",
+      "heading": "Which planet has the longest day?",
+      "emoji": "❓",
+      "items": [
+        "Mercury",
+        "Venus",
+        "Jupiter",
+        "Neptune"
+      ],
+      "value": "",
+      "answer_index": 1
+    },
+    {
+      "id": 2,
+      "scene": "answer",
+      "narration": "The answer is Venus. Its day is longer than its year.",
+      "tts": "The answer is Venus. Its day is longer than its year.",
+      "heading": "The answer is Venus",
+      "emoji": "💡",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 3,
+      "scene": "statement",
+      "narration": "Venus takes 243 Earth days to spin once.",
+      "tts": "Venus takes 243 Earth days to spin once.",
+      "heading": "Venus takes 243 Earth days to spin once",
+      "emoji": "🌍",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 4,
+      "scene": "stat",
+      "narration": "A day on Venus is 243 Earth days.",
+      "tts": "A day on Venus is 243 Earth days.",
+      "heading": "A day on Venus is 243 Earth days",
+      "emoji": "⏳",
+      "items": [],
+      "value": "243 Earth days",
+      "answer_index": -1
+    },
+    {
+      "id": 5,
+      "scene": "statement",
+      "narration": "Its year is only 225 Earth days long.",
+      "tts": "Its year is only 225 Earth days long.",
+      "heading": "Its year is only 225 Earth days long",
+      "emoji": "☀️",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 6,
+      "scene": "story",
+      "narration": "The Sun rises in the west on Venus.",
+      "tts": "The Sun rises in the west on Venus.",
+      "heading": "The Sun rises in the west on Venus",
+      "emoji": "🌄",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 7,
+      "scene": "outro",
+      "narration": "Follow for a new space quiz every day.",
+      "tts": "Follow for a new space quiz every day.",
+      "heading": "Follow for more",
+      "emoji": "✨",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    }
+  ],
+  "caption": "Did you know a day on Venus is longer than its year? Test your knowledge with this fun space quiz!",
+  "hashtags": [
+    "SpaceFacts",
+    "FunQuiz",
+    "Venus",
+    "PlanetFacts",
+    "ScienceQuiz",
+    "SpaceTriva"
+  ],
+  "model": "qwen3:8b",
+  "generated_at": "2026-11-16T20:26:28+05:30"
+}

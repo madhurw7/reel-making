@@ -1,0 +1,114 @@
+/* Shared look for every reel. compose.py inlines this into each reel's index.html (after the :root theme block).
+   Canvas 1080x1920. Everything readable sits in the band both Instagram Reels and YouTube Shorts keep clear of
+   their own buttons and captions: y 288..1248. Scenes use y 330..1120, captions y 1136..1246, x 120..960.
+   Rule from HyperFrames: never put a CSS transform on an element GSAP animates. Position with flex/inset. */
+
+@font-face { font-family: "Poppins"; font-weight: 500; src: url("assets/fonts/poppins-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Poppins"; font-weight: 600; src: url("assets/fonts/poppins-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Poppins"; font-weight: 700; src: url("assets/fonts/poppins-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Poppins"; font-weight: 800; src: url("assets/fonts/poppins-latin-800-normal.woff2") format("woff2"); }
+@font-face { font-family: "Poppins"; font-weight: 900; src: url("assets/fonts/poppins-latin-900-normal.woff2") format("woff2"); }
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--bg); }
+#root {
+  position: relative; width: 1080px; height: 1920px; overflow: hidden;
+  font-family: "Poppins", sans-serif; color: var(--ink);
+  --ink: #ffffff; --muted: rgba(255, 255, 255, 0.72); --card: rgba(255, 255, 255, 0.09);
+  --line: rgba(255, 255, 255, 0.18); --dark: #0b0f1c;
+}
+
+/* ---------- backdrop ---------- */
+.bg { position: absolute; inset: 0; z-index: 0; background: var(--bg); }
+.glow { position: absolute; border-radius: 50%; }
+.g1 { width: 1300px; height: 1300px; left: -520px; top: -420px;
+      background: radial-gradient(circle, color-mix(in srgb, var(--a) 62%, transparent) 0%, transparent 66%); }
+.g2 { width: 1400px; height: 1400px; left: 260px; top: 980px;
+      background: radial-gradient(circle, color-mix(in srgb, var(--b) 50%, transparent) 0%, transparent 66%); }
+.g3 { width: 700px; height: 700px; left: 520px; top: 420px;
+      background: radial-gradient(circle, color-mix(in srgb, var(--accent) 16%, transparent) 0%, transparent 70%); }
+/* decorative rings in the lower third, which is kept free of text for the apps' own UI */
+.ring-deco { position: absolute; border-radius: 50%; border: 3px solid rgba(255, 255, 255, 0.07); }
+.r1 { width: 620px; height: 620px; left: -160px; top: 1380px; }
+.r2 { width: 380px; height: 380px; left: 720px; top: 1500px; border-color: color-mix(in srgb, var(--accent) 22%, transparent); }
+.r3 { width: 150px; height: 150px; left: 560px; top: 1420px; border-width: 2px; }
+.dots { position: absolute; inset: 0;
+        background-image: radial-gradient(rgba(255, 255, 255, 0.075) 2px, transparent 2.5px); background-size: 54px 54px; }
+.shade { position: absolute; inset: 0;
+         background: linear-gradient(180deg, rgba(0, 0, 0, 0.28) 0%, transparent 22%, transparent 62%, rgba(0, 0, 0, 0.5) 100%); }
+
+/* ---------- always-on chrome ---------- */
+.progress { position: absolute; left: 120px; right: 120px; top: 236px; height: 8px; border-radius: 4px;
+            background: rgba(255, 255, 255, 0.16); z-index: 6; overflow: hidden; }
+#progress-fill { width: 100%; height: 100%; border-radius: 4px; background: var(--accent); }
+.brand { position: absolute; left: 120px; top: 258px; z-index: 6; font-weight: 600; font-size: 28px;
+         letter-spacing: 0.02em; color: var(--muted); }
+
+/* ---------- scenes ---------- */
+.scene { position: absolute; inset: 0; z-index: 2; }
+.stage { position: absolute; left: 120px; right: 120px; top: 330px; height: 790px; display: flex;
+         flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 42px; }
+.stage.top { gap: 32px; }
+
+.emoji { font-size: 210px; line-height: 1.1; }
+.emoji.sm { font-size: 140px; }
+.emoji span { display: inline-block; }
+
+.headline { font-weight: 800; letter-spacing: -0.025em; line-height: 1.08; text-wrap: balance; }
+.title { font-weight: 700; letter-spacing: -0.02em; line-height: 1.14; text-wrap: balance; }
+.w { display: inline-block; white-space: pre; }
+.hl { color: var(--accent); }
+.rule { width: 220px; height: 12px; border-radius: 6px; background: var(--accent); }
+
+.chip { display: inline-flex; align-items: center; gap: 16px; padding: 14px 34px; border-radius: 999px;
+        font-weight: 800; font-size: 38px; letter-spacing: 0.12em; color: var(--dark); background: var(--accent); }
+
+/* bullets, quiz options */
+.list { list-style: none; width: 100%; display: flex; flex-direction: column; gap: 22px; }
+.list.grid { display: grid; grid-template-columns: 1fr 1fr; }
+.list.tight .item { padding: 18px 28px; }
+.item { display: flex; align-items: center; gap: 26px; text-align: left; padding: 24px 32px; border-radius: 30px;
+        background: var(--card); border: 2px solid var(--line); font-weight: 600; line-height: 1.2; }
+.idx { flex: none; width: 68px; height: 68px; border-radius: 50%; display: flex; align-items: center;
+       justify-content: center; font-weight: 800; font-size: 36px; color: var(--dark); background: var(--accent); }
+.item .txt { flex: 1; }
+.item .mark { flex: none; font-size: 44px; line-height: 1; }
+
+/* stat */
+.big { font-weight: 900; line-height: 1; letter-spacing: -0.03em; color: var(--accent); }
+.big .unit { font-size: 0.42em; font-weight: 800; letter-spacing: 0; margin-left: 0.18em; }
+
+/* compare */
+.versus { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 20px; }
+.side { width: 100%; min-height: 180px; padding: 28px 40px; border-radius: 36px; display: flex; align-items: center;
+        justify-content: center; text-align: center; font-weight: 700; line-height: 1.18; border: 3px solid var(--line); }
+.side.left { background: color-mix(in srgb, var(--a) 46%, transparent); }
+.side.right { background: color-mix(in srgb, var(--b) 46%, transparent); }
+.vs { width: 96px; height: 96px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-weight: 900; font-size: 38px; color: var(--dark); background: var(--accent); }
+
+/* quiz: chip on the left, countdown ring on the right */
+.qhead { width: 100%; height: 116px; display: flex; align-items: center; justify-content: space-between; }
+.timer { position: relative; width: 116px; height: 116px; }
+.timer svg { position: absolute; inset: 0; width: 116px; height: 116px; }
+.timer .ring-bg { fill: none; stroke: rgba(255, 255, 255, 0.16); stroke-width: 16; }
+.timer .ring { fill: none; stroke: var(--accent); stroke-width: 16; stroke-linecap: round; }
+.timer .count { position: absolute; inset: 0; }
+.timer .count span { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+                     font-weight: 900; font-size: 58px; }
+
+/* story */
+.spot { width: 400px; height: 400px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+        background: radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05) 70%);
+        border: 3px solid var(--line); }
+
+/* outro */
+.follow { padding: 22px 60px; border-radius: 999px; font-weight: 800; font-size: 54px; color: var(--dark);
+          background: var(--accent); }
+.handle { font-weight: 600; font-size: 40px; color: var(--muted); }
+
+/* ---------- captions ---------- */
+.cap { position: absolute; left: 120px; right: 120px; top: 1136px; height: 110px; z-index: 5; display: flex;
+       align-items: center; justify-content: center; }
+.cap-text { display: inline-block; padding: 12px 30px; border-radius: 22px; font-weight: 800; font-size: 50px;
+            line-height: 1.15; white-space: nowrap; color: #fff; background: rgba(4, 6, 14, 0.62); }

@@ -1,0 +1,77 @@
+{
+  "title": "Venus Day Quiz",
+  "language": "english",
+  "format": "trivia",
+  "beats": [
+    {
+      "id": 1,
+      "scene": "hook",
+      "narration": "On one planet, a day is longer than a year.",
+      "tts": "On one planet, a day is longer than a year.",
+      "heading": "Day Longer Than Year",
+      "emoji": "⏳",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 2,
+      "scene": "quiz",
+      "narration": "Which planet has the longest day? Options: Mercury, Venus, Jupiter, Neptune.",
+      "tts": "Which planet has the longest day? Options: Mercury, Venus, Jupiter, Neptune.",
+      "heading": "Which planet has the longest day?",
+      "emoji": "❓",
+      "items": [
+        "Mercury",
+        "Venus",
+        "Jupiter",
+        "Neptune"
+      ],
+      "value": "",
+      "answer_index": 1
+    },
+    {
+      "id": 3,
+      "scene": "answer",
+      "narration": "Venus has the longest day. It takes 243 Earth days to spin once.",
+      "tts": "Venus has the longest day. It takes 243 Earth days to spin once.",
+      "heading": "Venus",
+      "emoji": "🪐",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 4,
+      "scene": "answer",
+      "narration": "But its year is only 225 Earth days. So a day is longer than a year.",
+      "tts": "But its year is only 225 Earth days. So a day is longer than a year.",
+      "heading": "Day Longer Than Year",
+      "emoji": "⏳",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 5,
+      "scene": "story",
+      "narration": "Venus spins backwards too. The Sun rises in the west there.",
+      "tts": "Venus spins backwards too. The Sun rises in the west there.",
+      "heading": "Sun Rises West",
+      "emoji": "🌅",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    }
+  ],
+  "caption": "Which planet has the longest day? Test your space IQ! Follow for daily quizzes.",
+  "hashtags": [
+    "spacefacts",
+    "venus",
+    "planetaryquiz",
+    "astrophysics",
+    "funfacts"
+  ],
+  "model": "qwen3:4b",
+  "generated_at": "2026-11-16T20:09:20+05:30"
+}

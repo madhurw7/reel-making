@@ -1,0 +1,80 @@
+# Pipeline settings. Every reel records the values it was built with in its reel.json.
+
+[paths]
+maya_dir = "/Users/madhurwadhwa/local-audio"                              # holds maya2_say.py (see MAYA2_RUNBOOK.md there)
+maya_python = "/Users/madhurwadhwa/local-audio/.venv-maya2/bin/python"
+
+[script]
+model = "gemma4:12b"             # any Ollama model tag; compare candidates with `reel eval-models`
+ollama_url = "http://localhost:11434"
+temperature = 0.7
+think = false                    # reasoning models: skip the thinking phase (much faster)
+num_ctx = 8192
+
+[voice.hinglish]
+voice = "Ritvik"                 # adult male, trained on Hindi
+lang = "hi"
+words_per_second = 3.7           # measured: 105 words in 27.9 s of speech; sets the script's word budget
+
+[voice.english]
+voice = "Abhay"                  # adult male, trained on English + Hindi
+lang = "en"
+words_per_second = 2.1           # measured: 75 words in 35.3 s of speech
+
+[voice]
+seed = 0
+lead_in_s = 0.35                 # silence before the first word
+beat_gap_s = 0.28                # pause between beats
+tail_s = 1.0                     # hold after the last word
+quiz_hold_s = 3.0                # thinking time (countdown) after a quiz question
+retries = 2                      # re-generate a beat with another seed if Maya hits its length cap
+
+[sound]
+music = "auto"                   # "auto" (pick by mood), a file name in assets/music, or "none"
+music_db = -21.0                 # music level relative to the voice, between sentences
+duck_db = -5.0                   # extra reduction while the voice is speaking
+sfx_db = -15.0                   # sound-effect level relative to the voice
+target_lufs = -14.0              # loudness of the final mix (Instagram / YouTube normalise to about -14)
+
+[video]
+fps = 30
+quality = "looks"                # hyperframes render quality: draft | looks | delivery
+workers = 4
+handle = ""                      # e.g. "@yourchannel": shown in the corner and on the outro
+captions = "roman"               # "roman" (running captions) or "off"
+
+# One theme per reel format. bg = backdrop, a/b = glow colours, accent = highlight colour.
+[themes.educational]
+bg = "#070B1A"
+a = "#2563EB"
+b = "#06B6D4"
+accent = "#FACC15"
+
+[themes.story]
+bg = "#140A1F"
+a = "#7C3AED"
+b = "#F97316"
+accent = "#FDBA74"
+
+[themes.trivia]
+bg = "#0B1024"
+a = "#DB2777"
+b = "#7C3AED"
+accent = "#34D399"
+
+# Turning captured sources (e.g. Hacker News) into draft ideas with the local model. Keys here override [script].
+[ideation]
+# model = "gemma4:12b"           # defaults to [script] model
+count = 3                        # how many top stories `reel hn capture` takes
+top_comments = 12                # top-level comments read per story
+replies = 1                      # replies read under each of those
+target_duration_s = 40
+audience_short = "Young adults in small-town India (tier 2.5 cities and below) who want to feel in the loop"
+audience = """
+Young adults, 18 to 35, in small-town India (tier 2.5 cities and below). Hindi-first, comfortable with Hinglish,
+on a budget Android phone with mobile data. Not from a tech background: students, shop and office workers,
+government-exam aspirants, gig workers.
+They want to feel aware of what is happening in technology, science and the wider world, and to have one smart
+thing to tell friends. They will not read the article, argue about it or act on it. A 30 to 45 second reel is all
+the attention they will give, and they should finish it feeling a little smarter, never lectured.
+"""

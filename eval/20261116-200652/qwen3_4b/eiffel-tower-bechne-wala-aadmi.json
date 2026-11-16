@@ -1,0 +1,106 @@
+{
+  "title": "Woh aadmi jisne Eiffel Tower bech diya",
+  "language": "hinglish",
+  "format": "story",
+  "beats": [
+    {
+      "id": 1,
+      "scene": "hook",
+      "narration": "Kya ek aadmi ne Eiffel Tower bech diya? Aur woh aadmi khud ne nahi! 1925 mein, Victor Lustig ne ek chhoti si galti se 300 million dollars ka project bech diya.",
+      "tts": "Kya ek aadmi ne Eiffel Tower bech diya? Aur woh aadmi khud ne nahi! 1925 mein, Victor Lustig ne ek chhoti si galti se 300 million dollars ka project bech diya.",
+      "heading": "Kya ek aadmi ne Eiffel Tower bech diya?",
+      "emoji": "❓",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 2,
+      "scene": "statement",
+      "narration": "Paris mein 1925 ke saal, Victor Lustig ne dekha ki Eiffel Tower ka chhota sa maintenance cost thoda zyada hai.",
+      "tts": "Paris mein 1925 ke saal, Victor Lustig ne dekha ki Eiffel Tower ka chhota sa maintenance cost thoda zyada hai.",
+      "heading": "Eiffel Tower ka ghar bhi khareedna hai?",
+      "emoji": "💰",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 3,
+      "scene": "story",
+      "narration": "Woh con man ne ek aashirwaad ka meeting bhi bana diya, ek fancy hotel mein, jab tak asli government official ka chhota sa bhi nahi thoda.",
+      "tts": "Woh con man ne ek aashirwaad ka meeting bhi bana diya, ek fancy hotel mein, jab tak asli government official ka chhota sa bhi nahi thoda.",
+      "heading": "Victor Lustig ke secret plan",
+      "emoji": "🔍",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 4,
+      "scene": "story",
+      "narration": "Lustig ne kaha ki government Eiffel Tower ko 243 days ke baad bech degi, aur iska koi aadmi bhi nahi.",
+      "tts": "Lustig ne kaha ki government Eiffel Tower ko 243 days ke baad bech degi, aur iska koi aadmi bhi nahi.",
+      "heading": "Eiffel Tower ka secret deal",
+      "emoji": "📜",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 5,
+      "scene": "stat",
+      "narration": "Eiffel Tower ko 1925 mein 300 million dollars ka project bhi bhi bech diya.",
+      "tts": "Eiffel Tower ko 1925 mein 300 million dollars ka project bhi bhi bech diya.",
+      "heading": "Eiffel Tower ka project",
+      "emoji": "📉",
+      "items": [],
+      "value": "300 million dollar",
+      "answer_index": -1
+    },
+    {
+      "id": 6,
+      "scene": "story",
+      "narration": "Ek dealer ne 300 million dollars ka project bech diya, lekin uska 10000 rupees ka bribe bhi leli.",
+      "tts": "Ek dealer ne 300 million dollars ka project bech diya, lekin uska 10000 rupees ka bribe bhi leli.",
+      "heading": "Andre Poisson ke galti",
+      "emoji": "💸",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 7,
+      "scene": "story",
+      "narration": "Lustig ne Vienna mein 10000 rupees ka project bech diya, lekin Poisson ne police ko bhi nahi bataya.",
+      "tts": "लुस्टिग ने वियना में 10000 रुपये का प्रोजेक्ट बेच दिया, लेकिन पॉइसोन ने पुलिस को भी नहीं बताया।",
+      "heading": "Poisson ka galti",
+      "emoji": "✈️",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 8,
+      "scene": "story",
+      "narration": "Lustig ne Paris mein 2nd time same trick kya, lekin Poisson ne 300 million dollars ka project bech diya.",
+      "tts": "लुस्टिग ने पेरिस में 2nd time same trick क्या, लेकिन पॉइसन ने 300 मिलियन डॉलर का प्रोजेक्ट बेच दिया।",
+      "heading": "Lustig ke 2nd try",
+      "emoji": "🔄",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    }
+  ],
+  "caption": "Kya ek aadmi ne Eiffel Tower bech diya? Victor Lustig ne 1925 mein ek chhoti si galti se 300 million dollars ka project bech diya. Follow for more unbelievable true stories!",
+  "hashtags": [
+    "truecrime",
+    "history",
+    "unbelievable",
+    "eiffeltower",
+    "victorlustig",
+    "paris"
+  ],
+  "model": "qwen3:4b",
+  "generated_at": "2026-11-16T20:08:56+05:30"
+}

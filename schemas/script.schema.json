@@ -1,0 +1,136 @@
+{
+  "$defs": {
+    "Beat": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "integer"
+        },
+        "scene": {
+          "enum": [
+            "hook",
+            "statement",
+            "bullets",
+            "stat",
+            "compare",
+            "quiz",
+            "answer",
+            "story",
+            "outro"
+          ],
+          "title": "Scene",
+          "type": "string"
+        },
+        "narration": {
+          "description": "Spoken line in the on-screen script (Roman letters); drives captions",
+          "title": "Narration",
+          "type": "string"
+        },
+        "tts": {
+          "default": "",
+          "description": "The same line as sent to Maya (Devanagari for Hinglish)",
+          "title": "Tts",
+          "type": "string"
+        },
+        "heading": {
+          "default": "",
+          "description": "Short on-screen text",
+          "title": "Heading",
+          "type": "string"
+        },
+        "emoji": {
+          "default": "",
+          "title": "Emoji",
+          "type": "string"
+        },
+        "items": {
+          "description": "bullets: 2-4 points; compare: 2 sides; quiz: options",
+          "items": {
+            "type": "string"
+          },
+          "title": "Items",
+          "type": "array"
+        },
+        "value": {
+          "default": "",
+          "description": "stat scene: the big number, e.g. '8 minute', '70%'",
+          "title": "Value",
+          "type": "string"
+        },
+        "answer_index": {
+          "default": -1,
+          "description": "quiz scene: index of the correct option",
+          "title": "Answer Index",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "scene",
+        "narration"
+      ],
+      "title": "Beat",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "language": {
+      "enum": [
+        "english",
+        "hinglish"
+      ],
+      "title": "Language",
+      "type": "string"
+    },
+    "format": {
+      "enum": [
+        "educational",
+        "story",
+        "trivia"
+      ],
+      "title": "Format",
+      "type": "string"
+    },
+    "beats": {
+      "items": {
+        "$ref": "#/$defs/Beat"
+      },
+      "title": "Beats",
+      "type": "array"
+    },
+    "caption": {
+      "default": "",
+      "title": "Caption",
+      "type": "string"
+    },
+    "hashtags": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Hashtags",
+      "type": "array"
+    },
+    "model": {
+      "default": "",
+      "title": "Model",
+      "type": "string"
+    },
+    "generated_at": {
+      "default": "",
+      "title": "Generated At",
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "language",
+    "format",
+    "beats"
+  ],
+  "title": "Script",
+  "type": "object"
+}

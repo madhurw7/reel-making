@@ -1,0 +1,92 @@
+{
+  "title": "The Planet with a Long Day",
+  "language": "english",
+  "format": "trivia",
+  "beats": [
+    {
+      "id": 1,
+      "scene": "hook",
+      "narration": "On one planet, a single day is actually longer than its entire year.",
+      "tts": "On one planet, a single day is actually longer than its entire year.",
+      "heading": "Longer Day than Year",
+      "emoji": "🪐",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 2,
+      "scene": "quiz",
+      "narration": "Which planet has the longest day?",
+      "tts": "Which planet has the longest day?",
+      "heading": "Which Planet?",
+      "emoji": "❓",
+      "items": [
+        "Mercury",
+        "Venus",
+        "Jupiter",
+        "Neptune"
+      ],
+      "value": "",
+      "answer_index": 1
+    },
+    {
+      "id": 3,
+      "scene": "answer",
+      "narration": "It is Venus. It takes 243 Earth days to spin once on its axis.",
+      "tts": "It is Venus. It takes 243 Earth days to spin once on its axis.",
+      "heading": "Venus",
+      "emoji": "✨",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 4,
+      "scene": "compare",
+      "narration": "Venus takes 243 days to rotate, but only 225 days to orbit the Sun.",
+      "tts": "Venus takes 243 days to rotate, but only 225 days to orbit the Sun.",
+      "heading": "Day vs Year",
+      "emoji": "⏳",
+      "items": [
+        "Rotation: 243 Days",
+        "Orbit: 225 Days"
+      ],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 5,
+      "scene": "statement",
+      "narration": "Venus also spins backwards. This means the Sun rises in the west.",
+      "tts": "Venus also spins backwards. This means the Sun rises in the west.",
+      "heading": "Backward Spin",
+      "emoji": "🌅",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 6,
+      "scene": "outro",
+      "narration": "Follow for a new space quiz every day.",
+      "tts": "Follow for a new space quiz every day.",
+      "heading": "Follow for More",
+      "emoji": "🚀",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    }
+  ],
+  "caption": "Did you know a day on Venus lasts longer than its year? 🤯 Tag a friend who needs to see this space fact!",
+  "hashtags": [
+    "space",
+    "astronomy",
+    "venus",
+    "spacefacts",
+    "sciencequiz",
+    "coolfacts"
+  ],
+  "model": "gemma4:12b",
+  "generated_at": "2026-11-16T20:30:32+05:30"
+}

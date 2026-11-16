@@ -1,0 +1,98 @@
+{
+  "title": "Aasman neela kyun hai?",
+  "language": "hinglish",
+  "format": "educational",
+  "beats": [
+    {
+      "id": 1,
+      "scene": "hook",
+      "narration": "Sunlight white dikhti hai, lekin aasman neela kyun hai?",
+      "tts": "सनलाइट व्हाइट दिखती है, लेकिन आसमान नीला क्यों है?",
+      "heading": "Sunlight white, aasman neela",
+      "emoji": "🌌",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 2,
+      "scene": "statement",
+      "narration": "Sunlight white dikhti hai, lekin asal mein ye saare colours ka mix hai.",
+      "tts": "सनलाइट व्हाइट दिखती है, लेकिन असल में ये सारे कलर्स का मिक्स है।",
+      "heading": "Sunlight ka mix",
+      "emoji": "🌈",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 3,
+      "scene": "stat",
+      "narration": "Blue light scatter 10 times more than red light.",
+      "tts": "ब्लू लाइट स्कैटर दस टाइम्स मोर थन रेड लाइट।",
+      "heading": "Blue light scatter",
+      "emoji": "💡",
+      "items": [],
+      "value": "10 times more",
+      "answer_index": -1
+    },
+    {
+      "id": 4,
+      "scene": "statement",
+      "narration": "Air molecules scatter blue light in all directions, so we see blue sky.",
+      "tts": "एयर मोलेक्यूल्स स्कैटर ब्लू लाइट इन अल डायरेक्शन्स, सो वे सी ब्लू स्काई।",
+      "heading": "Blue light scatter",
+      "emoji": "☁️",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 5,
+      "scene": "compare",
+      "narration": "Blue light short wavelength, red light long wavelength.",
+      "tts": "ब्लू लाइट शॉर्ट वेवलेंथ, रेड लाइट लॉन्ग वेवलेंथ।",
+      "heading": "Wavelength compare",
+      "emoji": "🧮",
+      "items": [
+        "Blue light short wavelength",
+        "Red light long wavelength"
+      ],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 6,
+      "scene": "story",
+      "narration": "Sunset mein light travel through more air, blue scatter away, red and orange remain.",
+      "tts": "सनसेट में लाइट ट्रैवल थ्रू मोर एयर, ब्लू स्कैटर अवे, रेड एंड ओरेंज रेमेन।",
+      "heading": "Sunset light travel",
+      "emoji": "🌅",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 7,
+      "scene": "outro",
+      "narration": "Follow for more science in 30 seconds.",
+      "tts": "फॉलो करें, अधिक साइंस 30 सेकंड में।",
+      "heading": "Follow for more",
+      "emoji": "🔔",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    }
+  ],
+  "caption": "Sunlight white dikhti hai, lekin aasman neela kyun hai? Aapne pichle video mein yeh bata diya hai.",
+  "hashtags": [
+    "science",
+    "aasmanneelakyunhai",
+    "shorts",
+    "education",
+    "learn",
+    "facts"
+  ],
+  "model": "qwen3:8b",
+  "generated_at": "2026-11-16T20:10:37+05:30"
+}

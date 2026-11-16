@@ -1,0 +1,121 @@
+{
+  "title": "The Man Who Sold the Eiffel Tower",
+  "language": "hinglish",
+  "format": "story",
+  "beats": [
+    {
+      "id": 1,
+      "scene": "hook",
+      "narration": "Kya aap imagine kar sakte hain ki koi Eiffel Tower ko bech de?",
+      "tts": "क्या आप इमेजिन कर सकते हैं कि कोई एफिल टावर को बेच दे?",
+      "heading": "Tower Bik Gaya?",
+      "emoji": "🗼",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 2,
+      "scene": "story",
+      "narration": "Ye baat hai 1925 ki jab Victor Lustig naam ka ek con man aaya.",
+      "tts": "ये बात है उन्नीस सौ पच्चीस की जब विक्टर लस्टिग नाम का एक कॉन मैन आया।",
+      "heading": "Victor Lustig ka Plan",
+      "emoji": "🕵️",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 3,
+      "scene": "statement",
+      "narration": "Usne notice kiya ki Eiffel Tower ko maintain karna bahut mehenga padta hai.",
+      "tts": "उसने नोटिस किया कि एफिल टावर को मेंटेन करना बहुत महंगा पड़ता है।",
+      "heading": "Maintenance ka Kharcha",
+      "emoji": "💰",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 4,
+      "scene": "story",
+      "narration": "Usne ek government officer ka roop dhara aur scrap dealers ko ek secret meeting ke liye bulaya.",
+      "tts": "उसने एक गवर्नमेंट ऑफिसर का रूप धरा और स्क्रैप डीलर्स को एक सीक्रेट मीटिंग के लिए बुलाया।",
+      "heading": "Secret Meeting",
+      "emoji": "🏨",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 5,
+      "scene": "bullets",
+      "narration": "Usne kaha ki government tower ko dismantle karke scrap metal bech degi.",
+      "tts": "उसने कहा कि गवर्नमेंट टावर को डिस्मेंटल करके स्क्रैप मेटल बेच देगी।",
+      "heading": "The Big Lie",
+      "emoji": "🤫",
+      "items": [
+        "Stay Secret",
+        "Sell Scrap",
+        "Quick Money"
+      ],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 6,
+      "scene": "story",
+      "narration": "Ek dealer, Andre Poisson, ne tower ke liye paise aur bribe dono de diye.",
+      "tts": "एक डीलर, आंद्रे पॉइसन, ने टावर के लिए पैसे और ब्राइब दोनों दे दिए।",
+      "heading": "The Deal",
+      "emoji": "🤝",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 7,
+      "scene": "statement",
+      "narration": "Lustig saara paisa lekar Vienna bhag gaya aur Poisson itna sharminda tha ki police ke paas nahi gaya.",
+      "tts": "लस्टिग सारा पैसा लेकर वियना भाग गया और पॉइसन इतना शर्मिंदा था कि पुलिस के पास नहीं गया।",
+      "heading": "The Escape",
+      "emoji": "🏃",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 8,
+      "scene": "statement",
+      "narration": "Lustig ne baad mein wapas aakar yehi prank dobara karne ki koshish ki.",
+      "tts": "लस्टिग ने बाद में वापस आकर यही प्रैंक दोबारा करने की कोशिश की।",
+      "heading": "Round Two",
+      "emoji": "🔄",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    },
+    {
+      "id": 9,
+      "scene": "outro",
+      "narration": "Aise hi crazy stories ke liye follow karo.",
+      "tts": "ऐसे ही क्रेज़ी स्टोरीज़ के लिए फॉलो करो।",
+      "heading": "Follow for More",
+      "emoji": "✨",
+      "items": [],
+      "value": "",
+      "answer_index": -1
+    }
+  ],
+  "caption": "Imagine selling a national landmark as scrap metal! 🗼 Victor Lustig was the ultimate con man. Watch to see how he did it.",
+  "hashtags": [
+    "truecrime",
+    "history",
+    "crazyfacts",
+    "eiffeltower",
+    "india",
+    "storytelling"
+  ],
+  "model": "gemma4:12b",
+  "generated_at": "2026-11-16T20:29:14+05:30"
+}
